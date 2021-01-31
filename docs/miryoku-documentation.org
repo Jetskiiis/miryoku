@@ -1,0 +1,213 @@
+
+#+Title: Miryoku Documentation [[data/logos/miryoku-roa-32.png]]
+
+[[../data/cover/miryoku-kle-cover.png]]
+
+Miryoku is an ergonomic, minimal, orthogonal, universal keyboard layout.  This
+document describes the layout.  For implementations see
+[[https://github.com/manna-harbour/miryoku/]].
+
+# https://github.com/snosov1/toc-org
+* Contents                                                              :TOC_4:
+- [[#introduction][Introduction]]
+  - [[#general-principles][General Principles]]
+- [[#physical-layout][Physical Layout]]
+- [[#functional-layout][Functional Layout]]
+  - [[#base-layer][Base Layer]]
+  - [[#single-hand-layers][Single Hand Layers]]
+    - [[#right-hand-layers][Right Hand Layers]]
+      - [[#navigation-and-editing][Navigation and Editing]]
+      - [[#mouse-emulation][Mouse Emulation]]
+      - [[#media][Media]]
+    - [[#left-hand-layers][Left Hand Layers]]
+      - [[#numbers-and-symbols][Numbers and Symbols]]
+      - [[#shifted-numbers-and-symbols][Shifted Numbers and Symbols]]
+      - [[#function-and-system][Function and System]]
+  - [[#additional-keys][Additional Keys]]
+  - [[#special-purpose-layers][Special Purpose Layers]]
+    - [[#tap][Tap]]
+    - [[#config][Config]]
+  - [[#alternatives-arrangements][Alternatives Arrangements]]
+- [[#keyboard-considerations][Keyboard Considerations]]
+- [[#references][References]]
+- [[#see-also][See Also]]
+
+* Introduction
+
+Not alphas, not physical, max ergo, min movement, no contortions
+
+
+** General Principles
+
+- Use layers instead of reaching.
+- Use both hands instead of contortions.
+- Use the home positions as much as possible.
+- Make full use of the thumbs.
+- Avoid unnecessary complication.
+
+
+* Physical Layout
+
+
+
+- 5 columns, 3 rows, 3 thumb keys, 2 hands.
+- Can be used on almost any split or non-split ergo or ortho keyboard.
+- Includes all keys found on a US layout TKL keyboard, plus media keys and mouse
+  emulation.
+- Home row is the middle row, home thumb key is the middle thumb key.
+- Maximum 1-u movement from home position for fingers and thumbs, and only along
+  one axis (except for the inner index finger column which is deprioritised
+  compared with the home columns).
+
+[[../data/mapping/miryoku-kle-mapping-reference.png]]
+
+[[../data/mapping/miryoku-kle-mapping-ergodox.png]]
+
+[[../data/mapping/miryoku-kle-mapping-60_ansi.png]]
+
+
+
+* Functional Layout
+
+[[../data/layers/miryoku-kle-reference.png]]
+
+- Dual-function modifiers on home row, mirrored on both hands.
+- Dual-function layer change on thumbs.
+- Layers are designed orthogonally with a single purpose per hand and are
+  accessed by holding a thumb key on the opposite hand.
+- All layers on the same hand are based on the same basic key arrangement.
+- Holding layer change and modifiers on one hand combined with a single key
+  press on the other hand can produce any combination of modifiers and single
+  keys without any finger contortions.
+- Single function mods are also defined on layers on the same hand as the layer
+  change thumb key so layer change and mods can be held in any order or
+  simultaneously without race conditions.
+- As mods are only enabled on the opposite hand, auto-repeat is available on the
+  home row on layers for use with cursor and mouse keys.
+- Tap-hold auto-repeat is disabled to permit faster tap-hold switching on
+  thumbs, but thumb tap keys are mirrored onto some layers for use with
+  auto-repeat.  On other layers thumb keys are redefined with important
+  functions for that layer.
+- Auto Shift for numbers and symbols.
+
+
+** Base Layer
+
+[[../data/layers/miryoku-kle-base.png]]
+
+The default layer is the base layer, and contains the alphas and most important
+punctuation on the fingers and the most important _ keys on the thumbs.
+
+The default base layer alpha layout is Colemak Mod-DH.  
+
+  Thumb keys are backspace, enter, delete on
+the right and space, tab, escape on the left.  Dot, comma and apostrophe are
+included for prose, dot and slash for file and directory names.
+
+
+** Single Hand Layers
+
+
+*** Right Hand Layers
+
+
+**** Navigation and Editing
+
+  [[../data/layers/miryoku-kle-nav.png]]
+
+  Primary right-hand layer (left home thumb) is navigation and editing.  Cursor
+  keys are on the home position, line and page movement below, clipboard above,
+  caps lock and insert on the inner column.  Thumb keys are duplicated from the
+  base layer to avoid having to layer change mid edit and to enable auto-repeat.
+
+
+**** Mouse Emulation
+
+  [[../data/layers/miryoku-kle-mouse.png]]
+
+  Secondary right-hand layer is mouse emulation.  Mouse movement mirrors cursor
+  navigation on home and wheel mirrors line / page movement below.  Buttons are on
+  the thumbs (L, M, R).  Mouse movement, click, and drag with modifiers can be
+  performed from the home position.  Unused keys are available for other related
+  functions.
+
+
+**** Media
+
+  [[../data/layers/miryoku-kle-media.png]]
+
+  Tertiary right-hand layer is media control, with volume up / down and next /
+  prev mirroring the navigation keys.  Pause, stop and mute are on thumbs.  RGB
+  control is on the top row (combine with shift to invert).  Unused keys are
+  available for other related functions.
+
+
+*** Left Hand Layers 
+
+
+**** Numbers and Symbols
+
+  [[../data/layers/miryoku-kle-num.png]]
+
+  Primary left-hand layer (right home thumb) is numbers and symbols.  Numbers
+  are in the standard numpad locations with symbols in the remaining positions.
+  Dot is duplicated from the base layer.
+
+
+**** Shifted Numbers and Symbols
+
+  [[../data/layers/miryoku-kle-sym.png]]
+
+
+  Secondary left-hand layer has shifted symbols in the same locations to reduce
+  chording when using mods with shifted symbols.  Open parenthesis is duplicated
+  next to close parenthesis.
+
+
+**** Function and System
+
+  [[../data/layers/miryoku-kle-fun.png]]
+
+
+  Tertiary left-hand layer has function keys mirroring the numbers on the primary
+  layer with extras on the pinkie column, plus system keys on the inner column.
+  App (menu) is on the tertiary thumb key and other thumb keys are duplicated from
+  the base layer to enable auto-repeat.
+
+
+
+** Additional Keys
+
+- AltGr
+- Layer Lock
+- Config
+
+** Special Purpose Layers
+
+
+*** Tap
+
+
+*** Config
+
+- Reset
+- Bootloader
+- Bluetooth
+- RGB
+- Base Layer
+
+** Alternatives Arrangements
+
+See the implementations for example alternative layouts.
+
+
+* Keyboard Considerations
+
+
+* References
+
+- https://colemakmods.github.io/mod-dh/
+- 
+
+
+* See Also
